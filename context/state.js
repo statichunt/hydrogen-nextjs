@@ -2,7 +2,7 @@ import { createContext, useContext } from "react";
 import posts from "../.json/posts.json";
 
 const HeaderContext = createContext();
-export const HeaderProvider = ({ children }) => {
+export const TaxonomySlugProvider = ({ children }) => {
   const categories = [
     ...new Set(
       posts.reduce((acc, post) => [...acc, ...post.frontmatter.categories], [])

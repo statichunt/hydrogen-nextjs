@@ -1,6 +1,6 @@
 import config from "@config/config.json";
 import Base from "@layouts/Baseof";
-import Card from "@layouts/components/Card";
+import Post from "@layouts/components/Post";
 import { getSinglePage } from "@lib/contentParser";
 import { getTaxonomy } from "@lib/taxonomyParser";
 import { sortByDate } from "@lib/utils/sortFunctions";
@@ -18,7 +18,7 @@ const Category = ({ posts, slug }) => {
               <h1 className="text-center capitalize">{slug}</h1>
               <div className="row pt-12">
                 {posts.map((post, i) => (
-                  <Card
+                  <Post
                     className="mb-6 sm:col-6"
                     key={"key-" + i}
                     post={post}

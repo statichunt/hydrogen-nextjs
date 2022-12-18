@@ -124,7 +124,7 @@ const Header = () => {
                       onClick={() => setOpenMenu(false)}
                       href={menu.url}
                       className={`nav-link inline-block ${
-                        !menu.url.includes("/categories") && "text-light"
+                        !menu.url.includes("/categories") && "text-dark"
                       } ${router.asPath === menu.url && "nav-link-active"}`}
                     >
                       {menu.name}

@@ -2,7 +2,7 @@ import config from "@config/config.json";
 import { plainify } from "@lib/utils/textConverter";
 import Footer from "@partials/Footer";
 import Header from "@partials/Header";
-import { HeaderProvider } from "context/state";
+import { TaxonomySlugProvider } from "context/state";
 import Head from "next/head";
 import { useRouter } from "next/router";
 
@@ -92,9 +92,9 @@ const Base = ({
       </Head>
 
       {router.route !== "/posts/[single]" && (
-        <HeaderProvider>
+        <TaxonomySlugProvider>
           <Header />
-        </HeaderProvider>
+        </TaxonomySlugProvider>
       )}
 
       {/* main site */}

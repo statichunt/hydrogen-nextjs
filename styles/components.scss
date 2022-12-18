@@ -25,7 +25,7 @@
   li {
     @apply inline-block;
     a {
-      @apply block h-9 w-9 rounded-full border bg-primary text-center text-light;
+      @apply block h-9 w-9 rounded-full border bg-primary text-center text-dark;
       svg {
         @apply m-auto h-9;
       }
@@ -39,7 +39,7 @@
     @apply mx-3
   }
    a {
-    @apply text-light text-2xl;
+    @apply text-dark text-2xl;
 
 
     svg {
@@ -53,7 +53,7 @@
 // content style
 .content {
   @apply prose max-w-none;
-  @apply prose-headings:mt-4 prose-headings:font-normal prose-headings:text-light;
+  @apply prose-headings:mt-4 prose-headings:font-normal prose-headings:text-dark;
   @apply prose-h1:mb-4 prose-h1:text-h1-sm md:prose-h1:text-h1;
   @apply prose-h2:mb-4 prose-h2:text-h2-sm md:prose-h2:text-h2;
   @apply prose-h3:mt-4 prose-h3:text-h3-sm md:prose-h3:text-h3;
@@ -63,15 +63,15 @@
   @apply prose-hr:border-[#cbcbcb42]/25;
   @apply  prose-p:text-text;
   @apply prose-img:rounded-lg;
-  @apply prose-blockquote:border-primary prose-blockquote:bg-[rgba(97,238,188,4%)] prose-blockquote:rounded prose-blockquote:text-2xl prose-blockquote:text-light prose-blockquote:py-8 prose-blockquote:px-8 prose-blockquote:not-italic prose-blockquote:leading-9;
+  @apply prose-blockquote:border-primary prose-blockquote:bg-[rgba(97,238,188,4%)] prose-blockquote:rounded prose-blockquote:text-2xl prose-blockquote:text-dark prose-blockquote:py-8 prose-blockquote:px-8 prose-blockquote:not-italic prose-blockquote:leading-9;
   @apply prose-code:rounded-sm prose-code:border prose-code:border-border prose-code:px-1 prose-code:text-primary;
   @apply prose-strong:text-text;
   @apply prose-a:text-primary;
   @apply prose-li:text-text  prose-li:marker:text-text;
-  @apply prose-table:rounded prose-table:overflow-hidden prose-thead:border-border prose-tr:border-none prose-td:text-base prose-td:text-text prose-td:p-3 prose-thead:bg-[#2e3b47] prose-th:p-3 prose-th:text-light prose-th:text-base;
+  @apply prose-table:rounded prose-table:overflow-hidden prose-thead:border-border prose-tr:border-none prose-td:text-base prose-td:text-text prose-td:p-3 prose-thead:bg-[#2e3b47] prose-th:p-3 prose-th:text-dark prose-th:text-base;
 
   blockquote p {
-    @apply text-light my-0 leading-9 text-[21px];
+    @apply text-dark my-0 leading-9 text-[21px];
   }
 
   tbody {
@@ -133,14 +133,14 @@
 
 //notice
 .notice {
-  @apply border-t-[30px];
+  @apply border-t-[30px] text-dark;
 
   &.note {
     @apply bg-[rgba(151,214,255,.15)] border-[#97d6ff]
   }
 
   p {
-    @apply my-0
+    @apply my-0 ;
   }
 
   &.tip {

@@ -7,7 +7,7 @@ import { MDXRemote } from "next-mdx-remote";
 import Image from "next/image";
 import Link from "next/link";
 import Base from "./Baseof";
-import Card from "./components/Card";
+import Post from "./components/Post";
 
 const PostSingle = ({ post, mdxContent, slug, posts }) => {
   const { frontmatter, content } = post[0];
@@ -87,9 +87,9 @@ const PostSingle = ({ post, mdxContent, slug, posts }) => {
           </div>
           <div className="pt-12">
             <h2 className="h2 text-center">Related Posts</h2>
-            <div className="row mt-12">
+            <div className="row mt-12 justify-center">
               {similarPosts.map((post, i) => (
-                <Card
+                <Post
                   className="col-12 mb-6 md:col-4"
                   key={"key-" + i}
                   post={post}

@@ -1,11 +1,11 @@
 import config from "@config/config.json";
 import Base from "@layouts/Baseof";
 import ImageFallback from "@layouts/components/ImageFallback";
+import Post from "@layouts/components/Post";
 import Social from "@layouts/components/Social";
 import { getListPage, getSinglePage } from "@lib/contentParser";
 import { sortByDate } from "@lib/utils/sortFunctions";
 import { markdownify } from "@lib/utils/textConverter";
-import Posts from "@partials/Posts";
 const { blog_folder } = config.settings;
 
 const Home = ({ profile, posts }) => {
@@ -48,7 +48,15 @@ const Home = ({ profile, posts }) => {
         <div className="container">
           <div className="row">
             <div className="mx-auto lg:col-10">
-              <Posts posts={sortPostByDate} />
+              <div className="row">
+                {posts.map((post, i) => (
+                  <Post
+                    className="col-12 mb-6 sm:col-6"
+                    key={"key-" + i}
+                    post={post}
+                  />
+                ))}
+              </div>
             </div>
           </div>
         </div>

@@ -1,7 +1,7 @@
 function Video({ title, width = 500, height = "auto", src, ...rest }) {
   return (
-    <video width={width} height={height} controls {...rest}>
-      <source src={src} type="video/mp4" />
+    <video className="rounded overflow-hidden" width={width} height={height} controls {...rest}>
+      <source src={src.match(/^http/) ? src : `/videos/${src}`} type="video/mp4" />
       {title}
     </video>
   );

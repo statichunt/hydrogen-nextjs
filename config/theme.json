@@ -8,7 +8,7 @@
       },
       "text_color": {
         "default": "#ceced0",
-        "light": "#ffffff"
+        "dark": "#ffffff"
       }
     }
   },

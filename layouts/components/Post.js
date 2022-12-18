@@ -3,7 +3,7 @@ import { dateFormat } from "@lib/utils/dateFormat";
 import Link from "next/link";
 const { blog_folder } = config.settings;
 
-const Card = ({ post, className }) => {
+const Post = ({ post, className }) => {
   return (
     <div className={className}>
       <div className="card">
@@ -46,4 +46,4 @@ const Card = ({ post, className }) => {
   );
 };
 
-export default Card;
+export default Post;
