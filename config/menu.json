@@ -1,0 +1,16 @@
+{
+  "main": [
+    {
+      "name": "All Posts",
+      "url": "/"
+    },
+    {
+      "name": "Contact",
+      "url": "/contact"
+    },
+    {
+      "name": "Elements",
+      "url": "/elements"
+    }
+  ]
+}

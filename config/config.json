@@ -1,0 +1,26 @@
+{
+  "site": {
+    "title": "Hydrogen Nextjs",
+    "base_url": "/",
+    "favicon": "/images/favicon.png"
+  },
+
+  "settings": {
+    "default_theme": "system",
+    "pagination": 2,
+    "summary_length": 200,
+    "blog_folder": "posts"
+  },
+
+  "params": {
+    "contact_form_action": "#",
+    "tag_manager_id": "",
+    "copyright": "Copyright © 2022 a theme by [statichunt](https://statichunt.com)"
+  },
+
+  "metadata": {
+    "meta_author": "Statichunt",
+    "meta_image": "",
+    "meta_description": ""
+  }
+}
