@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 
-const Pagination = ({ section, currentPage, totalPages }) => {
+const Pagination = ({ currentPage, totalPages }) => {
   const indexPageLink = currentPage === 2;
   const hasPrevPage = currentPage > 1;
   const hasNextPage = totalPages > currentPage;
@@ -21,11 +21,7 @@ const Pagination = ({ section, currentPage, totalPages }) => {
           {/* previous */}
           {hasPrevPage ? (
             <Link
-              href={
-                indexPageLink
-                  ? `${section ? "/" + section : "/"}`
-                  : `${section ? "/" + section : ""}/page/${currentPage - 1}`
-              }
+              href={indexPageLink ? "/" : `/page/${currentPage - 1}`}
               className="border border-primary px-2 py-2 text-text"
             >
               <>
@@ -78,11 +74,7 @@ const Pagination = ({ section, currentPage, totalPages }) => {
                 </span>
               ) : (
                 <Link
-                  href={
-                    i === 0
-                      ? `${section ? "/" + section : "/"}`
-                      : `${section ? "/" + section : ""}/page/${pagination}`
-                  }
+                  href={i === 0 ? `${"/"}` : `/page/${pagination}`}
                   passHref
                   aria-current="page"
                   className={`border border-primary px-4 py-2 text-text`}
@@ -96,7 +88,7 @@ const Pagination = ({ section, currentPage, totalPages }) => {
           {/* next page */}
           {hasNextPage ? (
             <Link
-              href={`${section ? "/" + section : ""}/page/${currentPage + 1}`}
+              href={`/page/${currentPage + 1}`}
               className="border border-primary px-2 py-2 text-text"
             >
               <>

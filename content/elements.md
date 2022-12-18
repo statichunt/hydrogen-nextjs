@@ -93,8 +93,8 @@ Some text to show that the reference links can follow later.
 
 ##### HTML
 
-```html
-<ul>
+<HighlightedCode language="html">
+{`<ul>
   <li class="nav-item">
     <a class="nav-link" href="/">Home</a>
   </li>
@@ -102,13 +102,14 @@ Some text to show that the reference links can follow later.
     <a class="nav-link" href="about/">About</a>
   </li>
 </ul>
-```
+`}
+</HighlightedCode>
 
 ---
 
 ##### CSS
 
-<SyntaxHighlighter language="css">
+<HighlightedCode language="css">
 {`
   img {
   vertical-align: middle;
@@ -117,17 +118,19 @@ Some text to show that the reference links can follow later.
   height: auto;
 }
 `}
-</SyntaxHighlighter>
+</HighlightedCode>
 
 ---
 
 ##### JavaScript
 
-```js
+<HighlightedCode language="javascript">
+{`
 window.addEventListener("load", (e) => {
   document.querySelector(".preloader").style.display = "none";
-});
-```
+})
+`}
+</HighlightedCode>
 
 ---
 
@@ -264,7 +267,7 @@ window.addEventListener("load", (e) => {
 
 #### Youtube video
 
-<Youtube id="ResipmZmpDU" title="Play: Video" />
+<Youtube id="qJA2U-YMvkk" title="Play: Video" />
 
 ---
 

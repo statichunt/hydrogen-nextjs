@@ -7,9 +7,19 @@
 
   "settings": {
     "default_theme": "system",
-    "pagination": 2,
+    "pagination": 6,
     "summary_length": 200,
-    "blog_folder": "posts"
+    "blog_folder": "posts",
+    "disqus": {
+      "enable": true,
+      "settings": {
+        "url": "http://www.example.com/example-thread",
+        "identifier": "something-unique-12345",
+        "title": "title",
+        "language": "En", 
+        "apiKey": "PUBLIC KEY"
+      }
+    }
   },
 
   "params": {

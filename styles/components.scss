@@ -64,7 +64,7 @@
   @apply  prose-p:text-text;
   @apply prose-img:rounded-lg;
   @apply prose-blockquote:border-primary prose-blockquote:bg-[rgba(97,238,188,4%)] prose-blockquote:rounded prose-blockquote:text-2xl prose-blockquote:text-dark prose-blockquote:py-8 prose-blockquote:px-8 prose-blockquote:not-italic prose-blockquote:leading-9;
-  @apply prose-code:rounded-sm prose-code:border prose-code:border-border prose-code:px-1 prose-code:text-primary;
+  // @apply prose-code:rounded-sm prose-code:border prose-code:border-border prose-code:px-1 prose-code:text-primary;
   @apply prose-strong:text-text;
   @apply prose-a:text-primary;
   @apply prose-li:text-text  prose-li:marker:text-text;
@@ -157,3 +157,8 @@
   
 }
 
+#disqus_thread {
+  p {
+    @apply text-dark #{!important};
+  }
+}

@@ -1,6 +1,7 @@
 import config from "@config/config.json";
 import Base from "@layouts/Baseof";
 import ImageFallback from "@layouts/components/ImageFallback";
+import Pagination from "@layouts/components/Pagination";
 import Post from "@layouts/components/Post";
 import Social from "@layouts/components/Social";
 import { getListPage, getSinglePage } from "@lib/contentParser";
@@ -9,8 +10,8 @@ import { markdownify } from "@lib/utils/textConverter";
 const { blog_folder } = config.settings;
 
 const Home = ({ profile, posts }) => {
+  const { pagination } = config.settings;
   const sortPostByDate = sortByDate(posts);
-  // const showPost = 4;
 
   return (
     <Base>
@@ -49,7 +50,7 @@ const Home = ({ profile, posts }) => {
           <div className="row">
             <div className="mx-auto lg:col-10">
               <div className="row">
-                {posts.map((post, i) => (
+                {sortPostByDate.slice(0, pagination).map((post, i) => (
                   <Post
                     className="col-12 mb-6 sm:col-6"
                     key={"key-" + i}
@@ -58,6 +59,12 @@ const Home = ({ profile, posts }) => {
                 ))}
               </div>
             </div>
+          </div>
+          <div className="mt-12">
+            <Pagination
+              totalPages={Math.ceil(posts.length / pagination)}
+              currentPage={1}
+            />
           </div>
         </div>
       </div>
