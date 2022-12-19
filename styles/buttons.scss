@@ -3,19 +3,18 @@
 }
 
 .btn-primary {
-  @apply bg-white text-black rounded no-underline border-none hover:bg-primary;
+  @apply rounded border-none bg-white text-black no-underline hover:bg-primary;
 }
 
 .btn-outline-primary {
   @apply border-primary bg-transparent hover:bg-primary hover:text-dark;
 }
 
-
 .btn-link {
   @apply relative overflow-hidden duration-200 hover:ml-1;
 
   &::after {
-    @apply absolute content-[""] right-0 bottom-0 bg-primary h-[1px] w-0 transition-all duration-200;
+    @apply absolute right-0 bottom-0 h-[1px] w-0 bg-primary transition-all duration-200 content-[""];
   }
 
   &:hover::after {

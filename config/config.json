@@ -2,11 +2,10 @@
   "site": {
     "title": "Hydrogen Nextjs",
     "base_url": "/",
-    "favicon": "/images/favicon.png"
+    "favicon": "/images/developer.png"
   },
 
   "settings": {
-    "default_theme": "system",
     "pagination": 6,
     "summary_length": 200,
     "blog_folder": "posts"

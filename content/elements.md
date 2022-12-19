@@ -93,7 +93,7 @@ Some text to show that the reference links can follow later.
 
 ##### HTML
 
-<HighlightedCode language="html" theme="atomDark">
+<Code language="html" theme="atomDark">
 {`<ul>
   <li class="nav-item">
     <a class="nav-link" href="/">Home</a>
@@ -103,13 +103,13 @@ Some text to show that the reference links can follow later.
   </li>
 </ul>
 `}
-</HighlightedCode>
+</Code>
 
 ---
 
 ##### CSS
 
-<HighlightedCode language="css" theme="atomDark">
+<Code language="css" theme="atomDark">
 {`
   img {
   vertical-align: middle;
@@ -118,19 +118,19 @@ Some text to show that the reference links can follow later.
   height: auto;
 }
 `}
-</HighlightedCode>
+</Code>
 
 ---
 
 ##### JavaScript
 
-<HighlightedCode language="javascript" theme="atomDark">
+<Code language="javascript" theme="atomDark">
 {`
 window.addEventListener("load", (e) => {
   document.querySelector(".preloader").style.display = "none";
 })
 `}
-</HighlightedCode>
+</Code>
 
 ---
 

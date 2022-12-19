@@ -11,13 +11,9 @@ input#nav-toggle:checked ~ #nav-menu {
   @apply block md:flex #{!important};
 }
 
-.header {
-  // @apply sticky top-0 z-50;
-}
-
 // navbar items
 .navbar {
-  @apply relative ;
+  @apply relative;
 }
 
 .navbar-brand {
@@ -28,27 +24,24 @@ input#nav-toggle:checked ~ #nav-menu {
 }
 
 .navbar-nav {
-  @apply text-center md:text-left  mt-7 md:mt-0;
+  @apply mt-7 text-center  md:mt-0 md:text-left;
 }
 
 .nav-item {
-  @apply  my-2 md:my-0;
+  @apply my-2 md:my-0;
 }
 
 .nav-link {
-  @apply px-3 py-[3px] text-text transition rounded hover:bg-white/10 duration-200 ease-in-out;
+  @apply rounded px-3 py-[3px] text-text transition duration-200 ease-in-out hover:bg-white/10;
 
-  &-active  {
-    @apply bg-white/10
+  &-active {
+    @apply bg-white/10;
   }
 }
-
-
-
 
 //accordion
 .accordion {
   ul {
-    @apply my-0
+    @apply my-0;
   }
 }
