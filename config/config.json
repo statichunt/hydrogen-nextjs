@@ -9,17 +9,7 @@
     "default_theme": "system",
     "pagination": 6,
     "summary_length": 200,
-    "blog_folder": "posts",
-    "disqus": {
-      "enable": true,
-      "settings": {
-        "url": "http://www.example.com/example-thread",
-        "identifier": "something-unique-12345",
-        "title": "title",
-        "language": "En", 
-        "apiKey": "PUBLIC KEY"
-      }
-    }
+    "blog_folder": "posts"
   },
 
   "params": {
@@ -32,5 +22,10 @@
     "meta_author": "Statichunt",
     "meta_image": "",
     "meta_description": ""
+  },
+
+  "disqus": {
+    "enable": true,
+    "shortname": "themefisher-template"
   }
 }

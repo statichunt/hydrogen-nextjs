@@ -14,10 +14,7 @@ const PostSingle = ({ post, mdxContent, slug, posts }) => {
   const { frontmatter, content } = post[0];
   let { description, title, date, image, categories } = frontmatter;
   description = description ? description : content.slice(0, 120);
-
   const similarPosts = similerItems(post, posts, slug);
-
-  const { enable, settings: disqusConfig } = config.settings.disqus;
 
   return (
     <Base title={title} description={description}>
@@ -86,11 +83,15 @@ const PostSingle = ({ post, mdxContent, slug, posts }) => {
                   <MDXRemote {...mdxContent} components={shortcodes} />
                 </div>
               </article>
+
+              {config.disqus.enable && (
+                <DiscussionEmbed
+                  shortname={config.disqus.shortname}
+                  config={config.disqus.settings}
+                />
+              )}
             </div>
           </div>
-          {enable && (
-            <DiscussionEmbed shortname="example" config={disqusConfig} />
-          )}
 
           <div className="pt-12">
             <h2 className="h2 text-center">Related Posts</h2>
