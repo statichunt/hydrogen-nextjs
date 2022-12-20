@@ -8,6 +8,7 @@ import Tab from "./Tab";
 import Tabs from "./Tabs";
 import Video from "./Video";
 import Youtube from "./Youtube";
+
 const shortcodes = {
   Button,
   Accordion,

@@ -93,8 +93,9 @@ Some text to show that the reference links can follow later.
 
 ##### HTML
 
-<Code language="html" theme="atomDark">
-{`<ul>
+<Code language="html">
+{`
+<ul>
   <li class="nav-item">
     <a class="nav-link" href="/">Home</a>
   </li>
@@ -109,9 +110,9 @@ Some text to show that the reference links can follow later.
 
 ##### CSS
 
-<Code language="css" theme="atomDark">
+<Code language="css">
 {`
-  img {
+img {
   vertical-align: middle;
   border: 0;
   max-width: 100%;
@@ -124,7 +125,7 @@ Some text to show that the reference links can follow later.
 
 ##### JavaScript
 
-<Code language="javascript" theme="atomDark">
+<Code language="javascript">
 {`
 window.addEventListener("load", (e) => {
   document.querySelector(".preloader").style.display = "none";
@@ -136,13 +137,7 @@ window.addEventListener("load", (e) => {
 
 #### Github Gist
 
-<iframe
-  width="100%"
-  height="350"
-  src="data:text/html;charset=utf-8,
-  <head><base target='_blank' /></head>
-  <body><script src='https://gist.github.com/tfsohag/4aa43a6d9d3518ed627727d2ad5b2f44.js'></script>
-  </body>" />
+<Gist src="https://gist.github.com/tfsohag/4aa43a6d9d3518ed627727d2ad5b2f44.js"/>
 
 ---
 
@@ -261,7 +256,7 @@ window.addEventListener("load", (e) => {
 
 #### Gallery
 
-<Gallery dir="/public/images/gallery"></Gallery>
+<Gallery dir="/images/gallery"></Gallery>
 
 ---
 

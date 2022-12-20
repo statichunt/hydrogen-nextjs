@@ -61,10 +61,10 @@
   @apply prose-p:text-text;
   @apply prose-img:rounded-lg;
   @apply prose-blockquote:rounded prose-blockquote:border-primary prose-blockquote:bg-[rgba(97,238,188,4%)] prose-blockquote:py-8 prose-blockquote:px-8 prose-blockquote:text-2xl prose-blockquote:not-italic prose-blockquote:leading-9 prose-blockquote:text-dark;
-  @apply prose-code:rounded-sm prose-code:px-1;
+  @apply prose-code:inline-block prose-code:rounded-sm prose-code:px-4 prose-code:pb-4;
   @apply prose-strong:text-text;
   @apply prose-a:text-primary;
-  @apply prose-li:text-text  prose-li:marker:text-text;
+  @apply prose-li:text-text prose-li:marker:text-text;
   @apply prose-table:overflow-hidden prose-table:rounded prose-thead:border-border prose-thead:bg-[#2e3b47] prose-tr:border-none prose-th:p-3 prose-th:text-base prose-th:text-dark prose-td:p-3 prose-td:text-base prose-td:text-text;
 
   blockquote p {
@@ -147,11 +147,5 @@
 
   &.warning {
     @apply border-[#ff918ccc] bg-[rgba(255,145,140,.15)];
-  }
-}
-
-#disqus_thread {
-  p {
-    @apply text-dark #{!important};
   }
 }
