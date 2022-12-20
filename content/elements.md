@@ -254,12 +254,6 @@ window.addEventListener("load", (e) => {
 
 ---
 
-#### Gallery
-
-<Gallery dir="/images/gallery"></Gallery>
-
----
-
 #### Youtube video
 
 <Youtube id="qJA2U-YMvkk" title="Play: Video" />
