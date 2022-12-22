@@ -1,16 +1,18 @@
 import config from "@config/config.json";
+import social from "@config/social.json";
 import Base from "@layouts/Baseof";
 import ImageFallback from "@layouts/components/ImageFallback";
 import Pagination from "@layouts/components/Pagination";
 import Post from "@layouts/components/Post";
 import Social from "@layouts/components/Social";
-import { getListPage, getSinglePage } from "@lib/contentParser";
+import { getSinglePage } from "@lib/contentParser";
 import { sortByDate } from "@lib/utils/sortFunctions";
 import { markdownify } from "@lib/utils/textConverter";
 const { blog_folder } = config.settings;
 
-const Home = ({ profile, posts }) => {
+const Home = ({ posts }) => {
   const { pagination } = config.settings;
+  const { name, image, designation, bio } = config.profile;
   const sortPostByDate = sortByDate(posts);
 
   return (
@@ -22,23 +24,20 @@ const Home = ({ profile, posts }) => {
             <div className="mx-auto text-center lg:col-8">
               <ImageFallback
                 className="mx-auto rounded-full"
-                src={profile.avatar}
+                src={image}
                 width={220}
                 height={220}
                 priority={true}
-                alt=""
+                alt={name}
               />
               {markdownify(
-                profile.name,
+                name,
                 "h1",
                 "mt-12 text-6xl lg:text-8xl font-semibold"
               )}
-              {markdownify(profile.position, "p", "mt-6 text-primary text-xl")}
-              {markdownify(profile.details, "p", "mt-4 leading-9 text-xl")}
-              <Social
-                source={profile.socials}
-                className="profile-social-icons mt-8"
-              />
+              {markdownify(designation, "p", "mt-6 text-primary text-xl")}
+              {markdownify(bio, "p", "mt-4 leading-9 text-xl")}
+              <Social source={social} className="profile-social-icons mt-8" />
             </div>
           </div>
         </div>
@@ -76,12 +75,9 @@ export default Home;
 
 // for homepage data
 export const getStaticProps = async () => {
-  const homepage = await getListPage("content/_index.md");
-  const { frontmatter } = homepage;
   const posts = getSinglePage(`content/${blog_folder}`);
   return {
     props: {
-      profile: frontmatter,
       posts: posts,
     },
   };

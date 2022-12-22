@@ -1,7 +1,6 @@
 import Accordion from "./Accordion";
 import Button from "./Button";
 import Code from "./Code";
-import Gallery from "./Gallery";
 import Gist from "./Gist";
 import Notice from "./Notice";
 import Tab from "./Tab";
@@ -16,7 +15,6 @@ const shortcodes = {
   Video,
   Tab,
   Tabs,
-  Gallery,
   Notice,
   Gist,
   Code,
