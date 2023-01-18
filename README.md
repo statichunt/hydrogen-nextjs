@@ -19,13 +19,6 @@
 
 ![hydrogen](https://demo.gethugothemes.com/thumbnails/hydrogen.png)
 
-👉🏻[View Live Preview](https://hydrogen-nextjs.vercel.app/)
-
-<!-- download -->
-## Download
-
-Download this template from [Github](https://github.com/statichunt/hydrogen-nextjs/archive/main.zip)
-
 ## Key Features
 
 - Multi-Author support
@@ -77,11 +70,6 @@ npm run build
 
 We use GitHub Issues as the official bug tracker for this Template. Please Search [existing issues](https://github.com/statichunt/hydrogen-nextjs/issues). It’s possible someone has already reported the same problem.
 If your problem or idea has not been addressed yet, feel free to [open a new issue](https://github.com/statichunt/hydrogen-nextjs/issues).
-
-<!-- support -->
-## Technical Support or Questions (Paid)
-
-If you have questions or need help integrating the product please [contact us](https://statichunt.com/contact) instead of opening an issue.
 
 <!-- licence -->
 ## License
