@@ -21,7 +21,7 @@
 
 ## Key Features
 
-- Multi-Author support
+- Multilingual Support
 - Google Page Speed score 100! (Desktop)
 - Supports Contact Form
 - Search Functionality
