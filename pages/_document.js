@@ -11,7 +11,7 @@ const Document = () => {
         {/* favicon */}
         <link rel="shortcut icon" href={favicon} />
         {/* theme meta */}
-        <meta name="theme-name" content="next-boilerplate" />
+        <meta name="theme-name" content="hydrogen-nextjs" />
         <meta name="msapplication-TileColor" content="#000000" />
         <meta
           name="theme-color"
