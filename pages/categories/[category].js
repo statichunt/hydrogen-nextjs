@@ -15,7 +15,7 @@ const Category = ({ posts, slug }) => {
         <div className="container">
           <div className="row">
             <div className="mx-auto lg:col-10">
-              <h1 className="text-center capitalize">{slug}</h1>
+              <h1 className="text-center capitalize">{slug.replace(/-/g, " ")}</h1>
               <div className="row pt-12">
                 {posts.map((post, i) => (
                   <Post

@@ -12,7 +12,7 @@ const RegularPages = ({ data }) => {
 
   return (
     <Base
-      title={title}
+      title={`${title.replace(/-/g, " ")}`}
       description={description ? description : content.slice(0, 120)}
       meta_title={meta_title}
       image={image}

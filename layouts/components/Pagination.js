@@ -15,14 +15,13 @@ const Pagination = ({ currentPage, totalPages }) => {
     <>
       {totalPages > 1 && (
         <nav
-          className="mb-4 flex justify-center -space-x-px"
+          className="mb-4 flex flex-wrap justify-center -space-x-px"
           aria-label="Pagination"
         >
-          {/* previous */}
           {hasPrevPage ? (
             <Link
               href={indexPageLink ? "/" : `/page/${currentPage - 1}`}
-              className="border border-primary px-2 py-2 text-text"
+              className="border border-primary px-2 py-2 text-text sm:px-3 sm:py-2 text-sm flex-basis-1/2"
             >
               <>
                 <span className="sr-only">Previous</span>
@@ -42,7 +41,7 @@ const Pagination = ({ currentPage, totalPages }) => {
               </>
             </Link>
           ) : (
-            <span className="border border-primary px-2 py-2 text-text">
+            <span className="border border-primary px-2 py-2 text-text sm:px-3 sm:py-2 text-sm flex-basis-1/2">
               <>
                 <span className="sr-only">Previous</span>
                 <svg
@@ -62,13 +61,12 @@ const Pagination = ({ currentPage, totalPages }) => {
             </span>
           )}
 
-          {/* page index */}
           {pageList.map((pagination, i) => (
             <React.Fragment key={`page-${i}`}>
               {pagination === currentPage ? (
                 <span
                   aria-current="page"
-                  className={`border border-primary bg-primary px-4 py-2 text-white`}
+                  className={`border border-primary bg-primary px-4 py-2 text-white sm:px-3 sm:py-2 text-sm flex-basis-1/2`}
                 >
                   {pagination}
                 </span>
@@ -77,7 +75,7 @@ const Pagination = ({ currentPage, totalPages }) => {
                   href={i === 0 ? `${"/"}` : `/page/${pagination}`}
                   passHref
                   aria-current="page"
-                  className={`border border-primary px-4 py-2 text-text`}
+                  className={`border border-primary px-4 py-2 text-text sm:px-3 sm:py-2 text-sm flex-basis-1/2`}
                 >
                   {pagination}
                 </Link>
@@ -85,11 +83,10 @@ const Pagination = ({ currentPage, totalPages }) => {
             </React.Fragment>
           ))}
 
-          {/* next page */}
           {hasNextPage ? (
             <Link
               href={`/page/${currentPage + 1}`}
-              className="border border-primary px-2 py-2 text-text"
+              className="border border-primary px-2 py-2 text-text sm:px-3 sm:py-2 text-sm flex-basis-1/2"
             >
               <>
                 <span className="sr-only">Next</span>
@@ -109,7 +106,7 @@ const Pagination = ({ currentPage, totalPages }) => {
               </>
             </Link>
           ) : (
-            <span className="border border-primary px-2 py-2 text-text">
+            <span className="border border-primary px-2 py-2 text-text sm:px-3 sm:py-2 text-sm flex-basis-1/2">
               <>
                 <span className="sr-only">Next</span>
                 <svg
