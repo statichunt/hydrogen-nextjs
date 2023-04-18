@@ -7,7 +7,10 @@ export const TaxonomySlugProvider = ({ children }) => {
     ...new Set(
       posts.reduce((acc, post) => [...acc, ...post.frontmatter.categories], [])
     ),
-  ].map((item) => ({ name: item, url: `/categories/${item.toLowerCase()}` }));
+  ].map((item) => ({
+    name: item.replace(/-/g, " "), 
+    url: `/categories/${item.toLowerCase().replace(/\s+/g, '-')}`,
+  }));
   return (
     <HeaderContext.Provider value={{ categories }}>
       {children}
