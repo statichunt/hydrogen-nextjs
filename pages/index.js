@@ -35,9 +35,9 @@ const Home = ({ posts }) => {
                 "h1",
                 "mt-12 text-6xl lg:text-8xl font-semibold"
               )}
-              {markdownify(designation, "p", "mt-6 text-primary text-xl")}
               {markdownify(bio, "p", "mt-4 leading-9 text-xl")}
-              <Social source={social} className="profile-social-icons mt-8" />
+              {markdownify(designation, "p", "mt-6 text-primary text-xl")}
+              {/* <Social source={social} className="mt-8 profile-social-icons" /> */}
             </div>
           </div>
         </div>
